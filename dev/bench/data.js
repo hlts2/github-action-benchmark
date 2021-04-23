@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619162147397,
+  "lastUpdate": 1619162440717,
   "repoUrl": "https://github.com/hlts2/github-action-benchmark",
   "entries": {
     "Go Benchmark": [
@@ -720,6 +720,150 @@ window.BENCHMARK_DATA = {
             "value": 70.3,
             "unit": "ns/op\t       0 B/op\t       0 allocs/op",
             "extra": "20000000 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hiroto.funakoshi.hiroto@gmail.com",
+            "name": "hlts2",
+            "username": "hlts2"
+          },
+          "committer": {
+            "email": "hiroto.funakoshi.hiroto@gmail.com",
+            "name": "hlts2",
+            "username": "hlts2"
+          },
+          "distinct": true,
+          "id": "2bcd1a6eaa3d0b8232400d9e551f7347731432d7",
+          "message": "fix: add subdirectory configuration\n\nSigned-off-by: hlts2 <hiroto.funakoshi.hiroto@gmail.com>",
+          "timestamp": "2021-04-23T16:19:39+09:00",
+          "tree_id": "197cee9de41c209b09da9ccfcb7e819a9d6c14a7",
+          "url": "https://github.com/hlts2/github-action-benchmark/commit/2bcd1a6eaa3d0b8232400d9e551f7347731432d7"
+        },
+        "date": 1619162437640,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkString",
+            "value": 13906,
+            "unit": "ns/op\t    9603 B/op\t     136 allocs/op",
+            "extra": "100000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkGet",
+            "value": 3801,
+            "unit": "ns/op\t    1328 B/op\t      19 allocs/op",
+            "extra": "300000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_info_String",
+            "value": 12184,
+            "unit": "ns/op\t    7118 B/op\t     129 allocs/op",
+            "extra": "200000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkDetail_String",
+            "value": 7459,
+            "unit": "ns/op\t    5446 B/op\t     106 allocs/op",
+            "extra": "200000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_info_Get",
+            "value": 2927,
+            "unit": "ns/op\t    1280 B/op\t      18 allocs/op",
+            "extra": "500000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_info_prepare",
+            "value": 3.87,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "500000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkStackTrace_String",
+            "value": 263,
+            "unit": "ns/op\t     248 B/op\t       5 allocs/op",
+            "extra": "5000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkUint32",
+            "value": 16.9,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "100000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkLimitedUint32_0",
+            "value": 18.3,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "100000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkLimitedUint32_10",
+            "value": 17.5,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "100000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkLimitedUint32_100",
+            "value": 18.1,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "100000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkLimitedUint32_MaxUint64",
+            "value": 17.1,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "100000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_Uint32_0",
+            "value": 28.8,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "50000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_Uint32_10",
+            "value": 29.3,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "50000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_Uint32_100",
+            "value": 28.1,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "50000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_Uint32_MaxUint32",
+            "value": 26.2,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "50000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_init_0",
+            "value": 53.2,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "30000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_init_10",
+            "value": 54,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "30000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_init_100",
+            "value": 54.4,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "30000000 times\n2 procs"
+          },
+          {
+            "name": "Benchmark_rand_init_MaxUint32",
+            "value": 53.2,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "30000000 times\n2 procs"
           }
         ]
       }
