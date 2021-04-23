@@ -10,7 +10,9 @@ jobs:
       uses: bobheadxi/gobenchdata@v1
       with:
         PRUNE_COUNT: 30
-        # GO_TEST_FLAGS: -cpu 1,2
+        GO_TEST_FLAGS: -cpu 1,2
+        INPUT_SUBDIRECTORY: internal
+        INPUT_GO_TEST_PKGS: ./...
         PUBLISH: true
         PUBLISH_BRANCH: gh-pages
       env:
