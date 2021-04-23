@@ -1,8 +1,5 @@
 package rand
 
-
-package rand
-
 import (
 	"math"
 	"testing"

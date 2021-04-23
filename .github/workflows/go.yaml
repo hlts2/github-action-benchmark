@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v1
       - name: Run benchmark
-        run: cd internal && go test go test -bench . ./... | tee output.txt
+        run: cd internal && go test -bench . ./... | tee output.txt
       - name: Store benchmark result
         uses: rhysd/github-action-benchmark@v1
         with:
