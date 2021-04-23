@@ -3,8 +3,7 @@ package rand
 import (
 	"sync"
 	"sync/atomic"
-
-	"github.com/kpango/fastime"
+	"time"
 )
 
 type rand struct {
@@ -46,7 +45,7 @@ func (r *rand) init() *rand {
 	if r.x == nil {
 		r.x = new(uint32)
 	}
-	x := fastime.UnixNanoNow()
+	x := time.Now().UnixNano()
 	atomic.StoreUint32(r.x, uint32((x>>32)^x))
 	return r
 }
