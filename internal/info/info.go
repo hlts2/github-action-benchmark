@@ -51,8 +51,6 @@ type StackTrace struct {
 }
 
 var (
-	// injected from build script
-
 	// Version represent Vald version.
 	Version = "v0.0.1"
 	// GitCommit represent the Vald GitCommit
